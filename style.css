@@ -54,11 +54,11 @@ h3 {
     margin: 2px;
 }
 
-button {
+.button {
     color: white;
     background-color: #524b4b;
     position: absolute;
-    top: 285px;
+    top: 70px;
     padding: 8px 40px;
-    left: 123px;
+    left: 73px;
 }

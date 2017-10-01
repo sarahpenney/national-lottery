@@ -4,14 +4,19 @@
   <h3>ENTER NUMBERS</h3>
 
   <div class="number-input">
-    <input type="number" name="number1" class="number" />
-    <input type="number" name="number2" class="number" />
-    <input type="number" name="number3" class="number" />
-    <input type="number" name="number4" class="number" />
-    <input type="number" name="number5" class="number" />
-    <input type="number" name="number6" class="number" />
+    <!-- <form id="numbers" action="/calculating.html"> -->
+      <form id="numbers">
+      <input type="number" ng-model="user.number1" class="number" />
+      <input type="number" ng-model="user.number2" class="number" />
+      <input type="number" ng-model="user.number3" class="number" />
+      <input type="number" ng-model="user.number4" class="number" />
+      <input type="number" ng-model="user.number5" class="number" />
+      <input type="number" ng-model="user.number6" class="number" />
+      <input type="submit" class="button" ng-click="update(user)" value="CALCULATE" />
+    </form>
   </div>
 
+  <pre>user = {{user | json}}</pre>
+  <pre>master = {{master | json}}</pre>
 
-  <button>CALCULATE</button>
 </div>

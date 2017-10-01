@@ -41,8 +41,20 @@ lottoApp.config(function($routeProvider) {
 });
 
     // create the controller and inject Angular's $scope
-lottoApp.controller('mainController', function($scope) {
+lottoApp.controller('mainController', function($scope, $http) {
   $scope.message = 'main';
+
+
+  $scope.update = function(user) {
+    $scope.master = angular.copy(user);
+  };
+
+
+
+
+
+
+
 });
 
 lottoApp.controller('beginController', function($scope) {
