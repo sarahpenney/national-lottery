@@ -23,7 +23,7 @@ body {
     left: 70px;
 }
 
-.dotted-line {
+.dotted-line-top {
     width: 340px;
     height: 20px;
     background-image: url(images/dashed-lines.png);

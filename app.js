@@ -17,14 +17,9 @@ lottoApp.config(function($routeProvider) {
         controller: 'mainController'
       })
 
-      .when('/begin', {
-        templateUrl: 'pages/begin.html',
-        controller: 'beginController'
-      })
-
         .when('/calculating', {
           templateUrl: 'pages/calculating.html',
-          controller: 'calculatingController'
+          controller: 'mainController'
         })
 
         .when('/winner', {
@@ -49,10 +44,14 @@ lottoApp.controller('mainController', function($scope, $http) {
   $scope.update = function(user) {
     $scope.master = angular.copy(user);
 
-    playernumbers = [user.number1, user.number2, user.number3, user.number4, user.number5, user.number6]
+    // for matching lotto data
+    $scope.playernumbers = [user.number1, user.number2, user.number3, user.number4, user.number5, user.number6]
 
-    console.log('playernumbers', playernumbers);
+    console.log('playernumbers', $scope.playernumbers);
 
+    // for html bind use
+    $scope.numbersinstring = $scope.playernumbers.toString();
+    console.log($scope.numbersinstring);
 
   };
 
@@ -62,14 +61,6 @@ lottoApp.controller('mainController', function($scope, $http) {
 
 
 
-});
-
-lottoApp.controller('beginController', function($scope) {
-  $scope.message = 'begin';
-});
-
-lottoApp.controller('calculatingController', function($scope) {
-  $scope.message = 'calc';
 });
 
 lottoApp.controller('winnerController', function($scope) {
