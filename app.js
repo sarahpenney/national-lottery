@@ -49,7 +49,6 @@ lottoApp.controller('mainController', function($scope, $http) {
   $scope.update = function(user) {
     $scope.master = angular.copy(user);
 
-    console.log(user.number4);
     playernumbers = [user.number1, user.number2, user.number3, user.number4, user.number5, user.number6]
 
     console.log('playernumbers', playernumbers);
