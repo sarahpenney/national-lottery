@@ -3,7 +3,7 @@ body {
 }
 
 .ticket {
-  height: 400px;
+    height: 400px;
     width: 400px;
     background-image: url(images/background-ticket.png);
     border: 20px solid white;
@@ -13,7 +13,7 @@ body {
 }
 
 .logo {
-  height: 250px;
+    height: 250px;
     width: 250px;
     background-repeat: no-repeat;
     background-image: url(images/logo.png);
@@ -21,4 +21,44 @@ body {
     position: absolute;
     top: -140px;
     left: 70px;
+}
+
+.dotted-line {
+    width: 340px;
+    height: 20px;
+    background-image: url(images/dashed-lines.png);
+    position: absolute;
+    top: 130px;
+    margin: auto;
+    background-repeat: no-repeat;
+    left: 30px;
+}
+
+h3 {
+    font-family: sans-serif;
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    font-size: 15px;
+}
+
+.number-input {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.number {
+    height: 30px;
+    width: 35px;
+    margin: 2px;
+}
+
+button {
+    color: white;
+    background-color: #524b4b;
+    position: absolute;
+    top: 285px;
+    padding: 8px 40px;
+    left: 123px;
 }
