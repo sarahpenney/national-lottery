@@ -44,9 +44,15 @@ lottoApp.config(function($routeProvider) {
 lottoApp.controller('mainController', function($scope, $http) {
   $scope.message = 'main';
 
+  var playernumbers = [];
 
   $scope.update = function(user) {
     $scope.master = angular.copy(user);
+
+    playernumbers = user;
+
+    console.log('playernumbers', playernumbers);
+
   };
 
 
