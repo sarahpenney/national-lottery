@@ -1,0 +1,24 @@
+body {
+  background-image: url('images/background.png');
+}
+
+.ticket {
+  height: 400px;
+    width: 400px;
+    background-image: url(images/background-ticket.png);
+    border: 20px solid white;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+
+.logo {
+  height: 250px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    position: absolute;
+    top: -140px;
+    left: 70px;
+}
