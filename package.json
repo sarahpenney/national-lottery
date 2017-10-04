@@ -1,0 +1,19 @@
+{
+  "name": "lotto",
+  "version": "0.0.1",
+  "author": "Sarah",
+  "description": "lotto game",
+  "license": "ISC",
+  "scripts": {},
+  "dependencies": {},
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahpenney/national-lottery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sarahpenney/national-lottery/issues"
+  },
+  "homepage": "https://github.com/sarahpenney/national-lottery#readme"
+}

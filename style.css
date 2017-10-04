@@ -1,5 +1,6 @@
 body {
   background-image: url('images/background.png');
+  font-family: sans-serif;
 }
 
 .ticket {
@@ -35,7 +36,6 @@ body {
 }
 
 h3 {
-    font-family: sans-serif;
     position: absolute;
     top: 160px;
     left: 130px;
@@ -62,4 +62,65 @@ h3 {
     top: 70px;
     padding: 8px 40px;
     left: 73px;
+}
+
+
+/*CALCULATING PAGE*/
+.calc-yournumbers {
+  padding: 0px 15px;
+}
+
+.calc-repeatitems {
+  position: absolute;
+    top: 190px;
+    display: inline-flex;
+    font-size: 19px;
+    left: 50px;
+}
+
+.calc-text {
+  font-size: 13px;
+  width: 200px;
+    text-align: center;
+    left: 100px;
+}
+
+.calc-numbers {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+}
+
+
+.dotted-line-bottom {
+  width: 340px;
+  height: 20px;
+  background-image: url(images/dashed-lines.png);
+  position: absolute;
+  top: 230px;
+  margin: auto;
+  background-repeat: no-repeat;
+  left: 30px;
+}
+
+.calc-numbers {
+  position: absolute;
+      left: 100px;
+}
+
+.calc-calculating {
+  position: absolute;
+  top: 250px;
+}
+
+.calc-p {
+  position: absolute;
+    top: 300px;
+    font-size: 11px;
+}
+
+.spinner {
+  position: absolute;
+    top: 260px;
+    left: 125px;
 }

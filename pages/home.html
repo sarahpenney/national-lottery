@@ -1,22 +1,40 @@
 <div class="ticket">
   <div class="logo"></div>
   <div class="dotted-line-top"></div>
-  <h3>ENTER NUMBERS</h3>
 
-  <div class="number-input">
-    <!-- <form id="numbers" action="/calculating.html"> -->
+  <!-- HIDE BELOW WHEN CALC CLICKED -->
+  <div ng-show="first" class="hide">
+    <h3>ENTER NUMBERS</h3>
+
+    <div class="number-input">
       <form id="numbers">
-      <input type="number" ng-model="user.number1" class="number" required/>
-      <input type="number" ng-model="user.number2" class="number" required/>
-      <input type="number" ng-model="user.number3" class="number" required/>
-      <input type="number" ng-model="user.number4" class="number" required/>
-      <input type="number" ng-model="user.number5" class="number" required/>
-      <input type="number" ng-model="user.number6" class="number" required/>
-      <a href="#/calculating"><input type="submit" class="button" ng-click="update(user)" value="CALCULATE" /></a>
-    </form>
+        <input type="number" ng-model="user.number1" class="number" required/>
+        <input type="number" ng-model="user.number2" class="number" required/>
+        <input type="number" ng-model="user.number3" class="number" required/>
+        <input type="number" ng-model="user.number4" class="number" required/>
+        <input type="number" ng-model="user.number5" class="number" required/>
+        <input type="number" ng-model="user.number6" class="number" required/>
+        <!-- <a href="#/calculating"><input type="submit" class="button" ng-click="update(user)" value="CALCULATE" /></a> -->
+        <input type="submit" class="button" ng-click="update(user); showAlert()" value="CALCULATE" />
+      </form>
+    </div>
   </div>
 
-  <!-- <pre>user = {{user | json}}</pre>
-  <pre>master = {{master | json}}</pre> -->
+  <!-- <pre>user = {{user | json}}</pre> -->
+  <!-- <pre>master = {{master | json}}</pre> -->
+
+  <!-- //BELOW TO SHOW AFTER CALC CLICKED -->
+  <div ng-show="second" class="show">
+    <h3 class="calc-text calc-numbers">NUMBERS</h3>
+     <div class="calc-repeatitems">
+       <div ng-repeat="numbers in playernumbers track by $index">
+         <div class="calc-yournumbers">{{numbers}}</div>
+       </div>
+    </div>
+    <div class="dotted-line-bottom"></div>
+    <h3 class="calc-text calc-calculating">CALCULATING</h3>
+    <img class="spinner" src="images/spinner.svg">
+    <!-- <p class="calc-text calc-p">THIS MIGHT TAKE A COUPLE OF MINUTES, WE ARE LOOKING OVER THE PAST 20 YEARS TO FIND IF YOU WOULD HAVE BEEN AS RICH AS KIM KARDASHIAN'S BACKSIDE</p> -->
+  </div>
 
 </div>
