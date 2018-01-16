@@ -48,8 +48,8 @@ lottoApp.controller('mainController', function($scope, $http, $timeout, $locatio
           .success(function (data) {
             $scope.data = data;
             angular.forEach($scope.data, function(item){
-              console.log($scope.data);
-              console.log(item.numbers);
+              console.log('data', $scope.data);
+              console.log('numbers:',item.numbers);
               $scope.numberstomatch = item.numbers
             });
           })
@@ -60,16 +60,35 @@ lottoApp.controller('mainController', function($scope, $http, $timeout, $locatio
 
     $timeout( function(){
 
-      // angular.forEach($scope.playernumbersinput, function(numbers) {
-      //   angular.forEach($scope.numberstomatch, function(numbers) {
-      //     if ($scope.playernumbersinput === $scope.numberstomatch) {
-      //       $location.path("pages/winner.html");
-      //     }
-      //   });
-      // });
+      console.log('timeout-playernumbers', $scope.playernumbers);
+      console.log('timeout-numbers-to-match', $scope.numberstomatch);
+
+      var arr1 = $scope.playernumbers;
+      var arr2 = $scope.numberstomatch;
+
+      arraysEqual($scope.playernumbers, $scope.numberstomatch);
+
+      function arraysEqual(arr1, arr2) {
+        console.log('called');
+        if(arr1.length !== arr2.length)
+          return false;
+          console.log('not same length');
+          for(var i = arr1.length; i--;) {
+            if(arr1 !== arr2[i])
+              return false;
+              console.log('not matched');
+            }
+
+            return true;
+              console.log('matched');
+          }
 
 
-      if ($scope.playernumbersinput === $scope.numberstomatch) {
+      // const map1 = $scope.playernumbers.map(x => x * 2);
+      // console.log('map1', map1);
+
+      // TODO: match numbers
+      if ($scope.playernumbers === $scope.numberstomatch) {
         $location.path("pages/winner.html");
       } else {
         $location.path("pages/loser.html");

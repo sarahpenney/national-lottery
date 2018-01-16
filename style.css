@@ -4,85 +4,85 @@ body {
 }
 
 .ticket {
-    height: 400px;
-    width: 400px;
-    background-image: url(images/background-ticket.png);
-    border: 20px solid white;
-    margin: auto;
-    position: relative;
-    top: 150px;
+  height: 400px;
+  width: 400px;
+  background-image: url(images/background-ticket.png);
+  border: 20px solid white;
+  margin: auto;
+  position: relative;
+  top: 150px;
 }
 
 .logo {
-    height: 250px;
-    width: 250px;
-    background-repeat: no-repeat;
-    background-image: url(images/logo.png);
-    background-size: contain;
-    position: absolute;
-    top: -140px;
-    left: 70px;
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-image: url(images/logo.png);
+  background-size: contain;
+  position: absolute;
+  top: -140px;
+  left: 70px;
 }
 
 .dotted-line-top {
-    width: 340px;
-    height: 20px;
-    background-image: url(images/dashed-lines.png);
-    position: absolute;
-    top: 130px;
-    margin: auto;
-    background-repeat: no-repeat;
-    left: 30px;
+  width: 340px;
+  height: 20px;
+  background-image: url(images/dashed-lines.png);
+  position: absolute;
+  top: 130px;
+  margin: auto;
+  background-repeat: no-repeat;
+  left: 30px;
 }
 
 h3 {
-    position: absolute;
-    top: 160px;
-    left: 130px;
-    font-size: 15px;
+  position: absolute;
+  top: 160px;
+  left: 130px;
+  font-size: 15px;
 }
 
 .number-input {
-    position: absolute;
-    top: 220px;
-    left: 50px;
+  position: absolute;
+  top: 220px;
+  left: 50px;
 }
 
 .number {
-    height: 30px;
-    width: 35px;
-    margin: 2px;
-    text-align: center;
+  height: 30px;
+  width: 35px;
+  margin: 2px;
+  text-align: center;
 }
 
 .button {
-    color: white;
-    background-color: #524b4b;
-    position: absolute;
-    top: 70px;
-    padding: 8px 40px;
-    left: 73px;
+  color: white;
+  background-color: #524b4b;
+  position: absolute;
+  top: 70px;
+  padding: 8px 40px;
+  left: 73px;
 }
 
-
 /*CALCULATING PAGE*/
+
 .calc-yournumbers {
   padding: 0px 15px;
 }
 
 .calc-repeatitems {
   position: absolute;
-    top: 190px;
-    display: inline-flex;
-    font-size: 19px;
-    left: 50px;
+  top: 190px;
+  display: inline-flex;
+  font-size: 19px;
+  left: 50px;
 }
 
 .calc-text {
   font-size: 13px;
   width: 200px;
-    text-align: center;
-    left: 100px;
+  text-align: center;
+  left: 100px;
 }
 
 .calc-numbers {
@@ -90,7 +90,6 @@ h3 {
   top: 150px;
   left: 130px;
 }
-
 
 .dotted-line-bottom {
   width: 340px;
@@ -105,7 +104,7 @@ h3 {
 
 .calc-numbers {
   position: absolute;
-      left: 100px;
+  left: 100px;
 }
 
 .calc-calculating {
@@ -115,12 +114,12 @@ h3 {
 
 .calc-p {
   position: absolute;
-    top: 300px;
-    font-size: 11px;
+  top: 300px;
+  font-size: 11px;
 }
 
 .spinner {
   position: absolute;
-    top: 260px;
-    left: 125px;
+  top: 260px;
+  left: 125px;
 }
