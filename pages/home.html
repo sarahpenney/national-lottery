@@ -7,16 +7,27 @@
     <h3>ENTER NUMBERS</h3>
 
     <div class="number-input">
-      <form id="numbers">
-        <input type="number" ng-model="user.number1" class="number" required/>
-        <input type="number" ng-model="user.number2" class="number" required/>
-        <input type="number" ng-model="user.number3" class="number" required/>
-        <input type="number" ng-model="user.number4" class="number" required/>
-        <input type="number" ng-model="user.number5" class="number" required/>
-        <input type="number" ng-model="user.number6" class="number" required/>
+      <select id="numbers" ng-repeat="numbers in myObj">
+        <option type="number" ng-model="user.number1" class="number" required/>{{numbers}}</option>
+      </select>
+      <select id="numbers">
+        <option type="number" ng-model="user.number2" class="number" required/>{{numbers}}</option>
+      </select>
+      <select id="numbers">
+        <option type="number" ng-model="user.number3" class="number" required/>{{numbers}}</option>
+      </select>
+      <select id="numbers">
+        <option type="number" ng-model="user.number4" class="number" required/>{{numbers}}</option>
+      </select>
+      <select id="numbers">
+        <option type="number" ng-model="user.number5" class="number" required/>{{numbers}}</option>
+      </select>
+      <select id="numbers">
+        <option type="number" ng-model="user.number6" class="number" required/>{{numbers}}</option>
+      </select>
         <!-- <a href="#/calculating"><input type="submit" class="button" ng-click="update(user)" value="CALCULATE" /></a> -->
         <input type="submit" class="button" ng-click="update(user); showAlert()" value="CALCULATE" />
-      </form>
+      </select>
     </div>
   </div>
 

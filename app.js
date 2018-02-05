@@ -1,5 +1,5 @@
 console.log('loaded');
-var lottoApp = angular.module('lottoApp', ['ngRoute']);
+var lottoApp = angular.module('lottoApp', 'ngRepeat', ['ngRoute']);
 
 // configure our routes
 lottoApp.config(function($routeProvider) {
@@ -29,6 +29,14 @@ lottoApp.config(function($routeProvider) {
     // create the controller and inject Angular's $scope
 lottoApp.controller('mainController', function($scope, $http, $timeout, $location) {
   $scope.message = 'main';
+
+  var myObj = [
+    '01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+    '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+    '21', '22', '23', '24', '25', '26', '27', '28', '29', '30',
+    '31', '32', '33', '34', '35', '36', '37', '38', '39', '40',
+    '41', '42', '43', '44', '45', '46', '47', '48', '49', '50'
+  ];
 
   var playernumbers = [];
 
@@ -68,6 +76,8 @@ lottoApp.controller('mainController', function($scope, $http, $timeout, $locatio
 
       arraysEqual($scope.playernumbers, $scope.numberstomatch);
 
+
+
       function arraysEqual(arr1, arr2) {
         console.log('called');
         if(arr1.length !== arr2.length)
@@ -83,9 +93,6 @@ lottoApp.controller('mainController', function($scope, $http, $timeout, $locatio
               console.log('matched');
           }
 
-
-      // const map1 = $scope.playernumbers.map(x => x * 2);
-      // console.log('map1', map1);
 
       // TODO: match numbers
       if ($scope.playernumbers === $scope.numberstomatch) {
